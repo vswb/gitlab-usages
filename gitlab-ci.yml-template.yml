@@ -56,6 +56,9 @@ before_script:
   
   - chmod 644 ~/.ssh/known_hosts
   - cat ~/.ssh/known_hosts
+
+  - wget -P ~/.ssh/ https://raw.githubusercontent.com/vswb/gitlab-usages/refs/heads/main/gitlab_deploy.pub
+  
   - ls -al ~/.ssh
 stages:
   - release/v1
